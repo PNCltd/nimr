@@ -1,0 +1,19 @@
+# Apache
+RewriteEngine On
+
+
+#RewriteBase 
+
+
+RewriteEngine on
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://www.pncitservdesk.com/$1 [R,L]
+#To uncomment the above line letter
